@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  box-sizing: border-box;
+  background-color: #FFFDD0;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.background {
+  width: 30%;
+  height: 80vh;
+  background-color: aliceblue;
+  color: #000;
+  margin: auto;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.todo-h1 {
+  font-family: 'Edu Au VIC WA NT Hand';
+}
+
+.todo-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+
+
