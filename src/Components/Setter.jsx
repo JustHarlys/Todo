@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import { nanoid } from 'nanoid'
 
-function Setter() {
+function Setter({handleItem, itemObject}) {
 
-    const [item, setItem] = useState({
-        id: nanoid(),
-        entry: ""
-    })
-
-    function handleItem(event) {
-
-        const {name, value} = event.target
-
-        setItem((prevState) => ({
-            ...prevState,
-            [name] : value
-        }));
-    }
-
-    console.log(item)
 
   return (
-    <div>
+    <div >
         <form action="">
         <input 
         type="text" 
         name='entry'
-        value={item.entry}
+        value={itemObject.entry}
         onChange={handleItem}
+        className='set-todo'
         />
         </form>
+
+        <button className='todo-btn'>Set Item</button>
     </div>
   )
 }
