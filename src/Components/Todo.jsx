@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
-function Todo() {
+function Todo({item, onChange, value}) {
 
-    const [isChecked, setIsChecked] = useState(false)
 
   return (
-    <div className='todo-container'>
-        <input type="checkbox" defaultChecked={false}/>
-        <p className='todo-p'>Lorem Ipsum Navas Bla BLA BLA</p>
-    </div>
+      <div className='todo-container'>
+        <input type="checkbox" onChange={onChange} checked={value}/>
+
+         <p className='todo-p'>{item}</p>
+      </div>
   )
 }
 

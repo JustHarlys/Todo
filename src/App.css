@@ -39,6 +39,12 @@ body {
   border-bottom: 1px solid black;
 }
 
+.todo-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 .set-todo {
   margin-bottom: 10%;
 }

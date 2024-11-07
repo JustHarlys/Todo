@@ -1,10 +1,10 @@
 
-function Setter({handleItem, itemObject}) {
+function Setter({handleItem, itemObject, itemsArray, setItemsArray}) {
 
 
   return (
     <div >
-        <form action="">
+        <form>
         <input 
         type="text" 
         name='entry'
@@ -14,7 +14,7 @@ function Setter({handleItem, itemObject}) {
         />
         </form>
 
-        <button className='todo-btn'>Set Item</button>
+        <button className='todo-btn' onClick={() => {setItemsArray([...itemsArray, {id: itemObject.id, name : itemObject.entry}])}}>Set Item</button>
     </div>
   )
 }
